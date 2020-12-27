@@ -1,0 +1,15 @@
+from selenium import webdriver
+from time import sleep
+
+mama1 = webdriver.Edge(executable_path = 'msedgedriver.exe')
+mama2 = webdriver.Edge(executable_path = 'msedgedriver.exe')
+mama3 = webdriver.Edge(executable_path = 'msedgedriver.exe')
+
+mama1.get("https://youtu.be/jPw7rdfO0uk")
+mama2.get("https://youtu.be/jPw7rdfO0uk")
+mama3.get("https://youtu.be/jPw7rdfO0uk")
+while True:
+    sleep(5)
+    mama1.refresh()
+    mama2.refresh()
+    mama3.refresh()
